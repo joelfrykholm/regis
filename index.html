@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Regis Flipbook</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.css">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -16,170 +16,29 @@
     #flipbook {
       width: 1920px;
       height: 1080px;
-      margin: auto;
+      margin: 40px auto;
     }
 
     .page {
       width: 960px;
       height: 1080px;
-      background-size: cover;
-      background-position: center;
-      position: relative;
+      background: white;
+      overflow: hidden;
     }
 
-    .footer {
-      position: absolute;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 16px;
-      color: white;
-      background: rgba(0,0,0,0.4);
-      padding: 8px 16px;
-      border-radius: 12px;
-    }
-
-    .footer a {
-      color: white;
-      text-decoration: none;
-      margin: 0 8px;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
+    .page img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
   </style>
 </head>
 <body>
 <div id="flipbook">
-
-  <div class="page" style="background-image: url('cover.jpg');">
-    
-<div class="footer">
-  <a href="https://www.regis.edu/admissions/index" target="_blank">Admissions</a>
-  <span>•</span>
-  <a href="https://www.regis.edu/admissions/visit/index" target="_blank">Visit Us</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer/coaches" target="_blank">Talk to Coaches</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer" target="_blank">Website</a>
+  <div class="page"><img src="cover.jpg" alt="Page image" /></div>  <div class="page"><img src="page 2-left.jpg" alt="Page image" /></div>  <div class="page"><img src="page 2-right.jpg" alt="Page image" /></div>  <div class="page"><img src="page 3-left.jpg" alt="Page image" /></div>  <div class="page"><img src="page 3-right.jpg" alt="Page image" /></div>  <div class="page"><img src="page 4-left.jpg" alt="Page image" /></div>  <div class="page"><img src="page 4-right.jpg" alt="Page image" /></div>  <div class="page"><img src="page 5-left.jpg" alt="Page image" /></div>  <div class="page"><img src="page 5-right.jpg" alt="Page image" /></div>
 </div>
 
-  </div>
-
-  <div class="page" style="background-image: url('page 2-left.jpg');">
-    
-<div class="footer">
-  <a href="https://www.regis.edu/admissions/index" target="_blank">Admissions</a>
-  <span>•</span>
-  <a href="https://www.regis.edu/admissions/visit/index" target="_blank">Visit Us</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer/coaches" target="_blank">Talk to Coaches</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer" target="_blank">Website</a>
-</div>
-
-  </div>
-
-  <div class="page" style="background-image: url('page 2-right.jpg');">
-    
-<div class="footer">
-  <a href="https://www.regis.edu/admissions/index" target="_blank">Admissions</a>
-  <span>•</span>
-  <a href="https://www.regis.edu/admissions/visit/index" target="_blank">Visit Us</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer/coaches" target="_blank">Talk to Coaches</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer" target="_blank">Website</a>
-</div>
-
-  </div>
-
-  <div class="page" style="background-image: url('page 3-left.jpg');">
-    
-<div class="footer">
-  <a href="https://www.regis.edu/admissions/index" target="_blank">Admissions</a>
-  <span>•</span>
-  <a href="https://www.regis.edu/admissions/visit/index" target="_blank">Visit Us</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer/coaches" target="_blank">Talk to Coaches</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer" target="_blank">Website</a>
-</div>
-
-  </div>
-
-  <div class="page" style="background-image: url('page 3-right.jpg');">
-    
-<div class="footer">
-  <a href="https://www.regis.edu/admissions/index" target="_blank">Admissions</a>
-  <span>•</span>
-  <a href="https://www.regis.edu/admissions/visit/index" target="_blank">Visit Us</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer/coaches" target="_blank">Talk to Coaches</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer" target="_blank">Website</a>
-</div>
-
-  </div>
-
-  <div class="page" style="background-image: url('page 4-left.jpg');">
-    
-<div class="footer">
-  <a href="https://www.regis.edu/admissions/index" target="_blank">Admissions</a>
-  <span>•</span>
-  <a href="https://www.regis.edu/admissions/visit/index" target="_blank">Visit Us</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer/coaches" target="_blank">Talk to Coaches</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer" target="_blank">Website</a>
-</div>
-
-  </div>
-
-  <div class="page" style="background-image: url('page 4-right.jpg');">
-    
-<div class="footer">
-  <a href="https://www.regis.edu/admissions/index" target="_blank">Admissions</a>
-  <span>•</span>
-  <a href="https://www.regis.edu/admissions/visit/index" target="_blank">Visit Us</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer/coaches" target="_blank">Talk to Coaches</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer" target="_blank">Website</a>
-</div>
-
-  </div>
-
-  <div class="page" style="background-image: url('page 5-left.jpg');">
-    
-<div class="footer">
-  <a href="https://www.regis.edu/admissions/index" target="_blank">Admissions</a>
-  <span>•</span>
-  <a href="https://www.regis.edu/admissions/visit/index" target="_blank">Visit Us</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer/coaches" target="_blank">Talk to Coaches</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer" target="_blank">Website</a>
-</div>
-
-  </div>
-
-  <div class="page" style="background-image: url('page 5-right.jpg');">
-    
-<div class="footer">
-  <a href="https://www.regis.edu/admissions/index" target="_blank">Admissions</a>
-  <span>•</span>
-  <a href="https://www.regis.edu/admissions/visit/index" target="_blank">Visit Us</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer/coaches" target="_blank">Talk to Coaches</a>
-  <span>•</span>
-  <a href="https://regisrangers.com/sports/womens-soccer" target="_blank">Website</a>
-</div>
-
-  </div>
-
-</div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
 <script>
