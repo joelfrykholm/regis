@@ -42,10 +42,21 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/turn.js/4.1.0/turn.min.js"></script>
 <script>
-  $('#flipbook').turn({
-    width: 1920,
-    height: 1080,
-    autoCenter: true
+  console.log("Flipbook script loaded");
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log("DOM fully loaded and parsed");
+    setTimeout(function () {
+      if (typeof $('#flipbook').turn === 'function') {
+        console.log("Initializing flipbook...");
+        $('#flipbook').turn({
+          width: 1920,
+          height: 1080,
+          autoCenter: true
+        });
+      } else {
+        console.error("Turn.js not loaded properly.");
+      }
+    }, 100);
   });
 </script>
 </body>
