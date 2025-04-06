@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Realistic Flipbook</title>
+  <title>Regis Flipbook</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -11,14 +11,20 @@
       padding: 0;
       background: #000;
       font-family: 'Inter', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    }
+    .flipbook-wrapper {
+      position: relative;
+      width: 100%;
       height: 100vh;
+      background: #000;
       overflow: hidden;
     }
     #flipbook {
-      width: 1920px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 960px;
       height: 1080px;
       max-width: 100%;
       max-height: 100%;
@@ -33,15 +39,17 @@
 </head>
 <body>
 
-<div id="flipbook"></div>
+<div class="flipbook-wrapper">
+  <div id="flipbook"></div>
+</div>
 
 <script>
-  const pageImages = ['cover.jpg', 'page 2-left.jpg', 'page 2-right.jpg', 'page 3-left.jpg', 'page 3-right.jpg', 'page 4-left.jpg', 'page 4-right.jpg', 'page 5-left.jpg', 'page 5-right.jpg'];
+  const pageImages = ['https://cdn.prod.website-files.com/6567b1a062d32d42b6680785/67f1feef5bbe52d7a070784e_cover.jpg', 'https://cdn.prod.website-files.com/6567b1a062d32d42b6680785/67f1feef6455127fcce1cf0b_page%202-left.jpg', 'https://cdn.prod.website-files.com/6567b1a062d32d42b6680785/67f1feef8466976b380155a5_page%202-right.jpg', 'https://cdn.prod.website-files.com/6567b1a062d32d42b6680785/67f1feef4d93d2a7b9022186_page%203-left.jpg', 'https://cdn.prod.website-files.com/6567b1a062d32d42b6680785/67f1feef3b071e2e8582a746_page%203-right.jpg', 'https://cdn.prod.website-files.com/6567b1a062d32d42b6680785/67f1feeffe36ab2b51c795ff_page%204-left.jpg', 'https://cdn.prod.website-files.com/6567b1a062d32d42b6680785/67f1feef32778f33e01747ad_page%204-right.jpg', 'https://cdn.prod.website-files.com/6567b1a062d32d42b6680785/67f1feef32778f33e01747bf_page%205-left.jpg', 'https://cdn.prod.website-files.com/6567b1a062d32d42b6680785/67f1feefc2541e7ba0d28b03_page%205-right.jpg'];
 
   const book = new St.PageFlip(document.getElementById("flipbook"), {
     width: 960,
     height: 1080,
-    size: "fixed",
+    size: "stretch",
     maxShadowOpacity: 0.5,
     showCover: true,
     mobileScrollSupport: false
